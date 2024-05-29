@@ -1,0 +1,23 @@
+{
+    "config": {
+        "model_dtype": "torch.float16", 
+        "model_name": "gpt2-demo",
+        "model_sha": "ac3299b02780836378b9e1e68c6eead546e89f90"
+    },
+    "results": {
+        "anli_r1": {
+          "acc": 0.4,
+          "acc_stderr": 0.11239029738980327
+        },
+        "logiqa": {
+          "acc": 0.35,
+          "acc_stderr": 0.10942433098048308,
+          "acc_norm": 0.3,
+          "acc_norm_stderr": 0.10513149660756933
+        }
+      },
+      "versions": {
+        "anli_r1": 0,
+        "logiqa": 0
+      }
+}

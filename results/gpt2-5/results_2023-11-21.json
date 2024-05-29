@@ -1,0 +1,33 @@
+{
+  "results": {
+    "anli_r1": {
+      "acc": 0.4,
+      "acc_stderr": 0.11239029738980327
+    },
+    "logiqa": {
+      "acc": 0.35,
+      "acc_stderr": 0.10942433098048308,
+      "acc_norm": 0.3,
+      "acc_norm_stderr": 0.10513149660756933
+    }
+  },
+  "versions": {
+    "anli_r1": 0,
+    "logiqa": 0
+  },
+  "config": {
+    "model": "hf-causal-experimental",
+    "model_args": "pretrained=demo-leaderboard/gpt2-demo,revision=main,dtype=bfloat16",
+    "num_fewshot": 0,
+    "batch_size": 1,
+    "batch_sizes": [],
+    "device": "cpu",
+    "no_cache": true,
+    "limit": 20,
+    "bootstrap_iters": 100000,
+    "description_dict": null,
+    "model_dtype": "bfloat16",
+    "model_name": "demo-leaderboard/gpt2-demo",
+    "model_sha": "main"
+  }
+}
