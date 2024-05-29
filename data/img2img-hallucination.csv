@@ -1,0 +1,10 @@
+Model Name (Visual),Model link (optional),POPE COCO ↑,CHAIR (s/i) ↓,UniHD ↓,SelfCheckGPT ↓,CrossCheck-explicit ↓,CrossCheck-implicit ↓,Human ↓
+FAVOR,https://github.com/BriansIDP/AudioVisualLLM,79.8,"32.0, 17.6",54.9,13.78,25.33,48.71,44.5
+Llama-VID,https://github.com/dvlab-research/LLaMA-VID,90.1,"40.0, 10.6",39.84,14.86,19.49,32.41,25.53
+Valley,https://github.com/RupertLuo/Valley,38.5,"71.5, 25.6",71.75,25.69,26.02,38.72,53.91
+Chat-Univi,https://github.com/PKU-YuanGroup/Chat-UniVi,61,"66.0, 21.7",56.91,16.8,20.37,38.03,42.34
+LLaVA-v1.5,https://huggingface.co/liuhaotian/llava-v1.5-7b,82.9,"63.0, 16.7",46.04,12.57,19.46,34.81,38.24
+Video-Llama,https://github.com/DAMO-NLP-SG/Video-LLaMA/tree/main,38.7,"43.5, 15.6",58.3,22.99,24.93,33.52,31.14
+InstructBLIP,https://huggingface.co/docs/transformers/model_doc/instructblip,84.1,"62.5, 26.8",43.59,11.68,27.05,49.99,57.25
+MPLUG-Owl2,https://github.com/X-PLUG/mPLUG-Owl/tree/main/mPLUG-Owl2,71.9,"58.5, 18.6",35.15,16.07,20.35,34.43,34.11
+Video-LLaVA,https://github.com/PKU-YuanGroup/Video-LLaVA,64.2,"60.5, 19.4",51.32,19.97,22.46,36.17,38.72

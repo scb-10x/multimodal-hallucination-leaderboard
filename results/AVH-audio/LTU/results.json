@@ -1,0 +1,1 @@
+{"config": {"model_name": "LTU", "model_link": "https://github.com/YuanGongND/ltu/tree/main"}, "results": {"SelfCheckGPT ↓": {"SelfCheckGPT ↓": 21.95}, "CrossCheck-explicit ↓": {"CrossCheck-explicit ↓": 37.44}, "RefCheck ↓": {"RefCheck ↓": 32.57}}}

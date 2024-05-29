@@ -1,0 +1,1 @@
+{"config": {"model_name": "Valley", "model_link": "https://github.com/RupertLuo/Valley"}, "results": {"SelfCheckGPT ↓": {"SelfCheckGPT ↓": 52.43}, "CrossCheck-explicit ↓": {"CrossCheck-explicit ↓": 55.98}, "RefCheck ↓": {"RefCheck ↓": 51.78}}}

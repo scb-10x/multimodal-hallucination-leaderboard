@@ -1,31 +1,16 @@
 from dataclasses import dataclass
 from enum import Enum
 
-@dataclass
-class Task:
-    benchmark: str
-    metric: str
-    col_name: str
 
-
-# Select your tasks here
-# ---------------------------------------------------
-class Tasks(Enum):
-    # task_key in the json file, metric_key in the json file, name to display in the leaderboard 
-    task0 = Task("anli_r1", "acc", "ANLI")
-    task1 = Task("logiqa", "acc_norm", "LogiQA")
 
 NUM_FEWSHOT = 0 # Change with your few shot
 # ---------------------------------------------------
-
-
 
 # Your leaderboard name
 TITLE = """<h1 align="center" id="space-title">Demo leaderboard</h1>"""
 
 # What does your leaderboard evaluate?
 INTRODUCTION_TEXT = """
-Intro text
 """
 
 # Which evaluations are you running? how can people reproduce what you have?
@@ -69,4 +54,12 @@ If everything is done, check you can launch the EleutherAIHarness on your model 
 
 CITATION_BUTTON_LABEL = "Copy the following snippet to cite these results"
 CITATION_BUTTON_TEXT = r"""
+@misc{sun2024crosscheckgpt,
+      title={CrossCheckGPT: Universal Hallucination Ranking for Multimodal Foundation Models}, 
+      author={Guangzhi Sun and Potsawee Manakul and Adian Liusie and Kunat Pipatanakul and Chao Zhang and Phil Woodland and Mark Gales},
+      year={2024},
+      eprint={2405.13684},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 """

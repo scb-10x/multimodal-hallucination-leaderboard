@@ -17,14 +17,6 @@ def check_model_card(repo_id: str) -> tuple[bool, str]:
     except huggingface_hub.utils.EntryNotFoundError:
         return False, "Please add a model card to your model to explain how you trained/fine-tuned it."
 
-    # Enforce license metadata
-    if card.data.license is None:
-        if not ("license_name" in card.data and "license_link" in card.data):
-            return False, (
-                "License not found. Please add a license to your model card using the `license` metadata or a"
-                " `license_name`/`license_link` pair."
-            )
-
     # Enforce card content
     if len(card.text) < 200:
         return False, "Please add a description to your model card, it is too short."
@@ -59,20 +51,15 @@ def is_model_on_hub(model_name: str, revision: str, token: str = None, trust_rem
         return False, "was not found on hub!", None
 
 
-def get_model_size(model_info: ModelInfo, precision: str):
+def get_model_size(model_info: ModelInfo):
     """Gets the model size from the configuration, or the model name if the configuration does not contain the information."""
     try:
         model_size = round(model_info.safetensors["total"] / 1e9, 3)
     except (AttributeError, TypeError):
         return 0  # Unknown model sizes are indicated as 0, see NUMERIC_INTERVALS in app.py
 
-    size_factor = 8 if (precision == "GPTQ" or "gptq" in model_info.modelId.lower()) else 1
-    model_size = size_factor * model_size
+    model_size = 1 * model_size
     return model_size
-
-def get_model_arch(model_info: ModelInfo):
-    """Gets the model architecture from the configuration"""
-    return model_info.config.get("architectures", "Unknown")
 
 def already_submitted_models(requested_models_dir: str) -> set[str]:
     """Gather a list of already submitted models to avoid duplicates"""
@@ -88,7 +75,7 @@ def already_submitted_models(requested_models_dir: str) -> set[str]:
                     continue
                 with open(os.path.join(root, file), "r") as f:
                     info = json.load(f)
-                    file_names.append(f"{info['model']}_{info['revision']}_{info['precision']}")
+                    file_names.append(f"{info['model']}_{info['revision']}")
 
                     # Select organisation
                     if info["model"].count("/") == 0 or "submitted_time" not in info:

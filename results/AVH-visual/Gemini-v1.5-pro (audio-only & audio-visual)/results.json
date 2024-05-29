@@ -1,0 +1,1 @@
+{"config": {"model_name": "Gemini-v1.5-pro (audio-only & audio-visual)", "model_link": NaN}, "results": {"SelfCheckGPT ↓": {"SelfCheckGPT ↓": 12.77}, "CrossCheck-explicit ↓": {"CrossCheck-explicit ↓": 23.27}, "RefCheck ↓": {"RefCheck ↓": 19.34}}}

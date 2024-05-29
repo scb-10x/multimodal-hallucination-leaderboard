@@ -1,0 +1,1 @@
+{"config": {"model_name": "FAVOR (audio-only & audio-visual)", "model_link": NaN}, "results": {"SelfCheckGPT ↓": {"SelfCheckGPT ↓": 56.42}, "CrossCheck-explicit ↓": {"CrossCheck-explicit ↓": 49.6}, "RefCheck ↓": {"RefCheck ↓": 51.42}}}

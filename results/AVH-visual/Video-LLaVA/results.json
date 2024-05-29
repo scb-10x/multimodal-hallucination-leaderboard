@@ -1,0 +1,1 @@
+{"config": {"model_name": "Video-LLaVA", "model_link": "https://github.com/PKU-YuanGroup/Video-LLaVA"}, "results": {"SelfCheckGPT ↓": {"SelfCheckGPT ↓": 30.59}, "CrossCheck-explicit ↓": {"CrossCheck-explicit ↓": 33.52}, "RefCheck ↓": {"RefCheck ↓": 31.71}}}

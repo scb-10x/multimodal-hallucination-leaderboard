@@ -1,0 +1,1 @@
+{"config": {"model_name": "Video-Llama (audio-only & audio-visual)", "model_link": NaN}, "results": {"SelfCheckGPT ↓": {"SelfCheckGPT ↓": 47.73}, "CrossCheck-explicit ↓": {"CrossCheck-explicit ↓": 49.13}, "RefCheck ↓": {"RefCheck ↓": 50.41}}}

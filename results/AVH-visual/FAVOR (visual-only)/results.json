@@ -1,0 +1,1 @@
+{"config": {"model_name": "FAVOR (visual-only)", "model_link": "https://github.com/BriansIDP/AudioVisualLLM"}, "results": {"SelfCheckGPT ↓": {"SelfCheckGPT ↓": 60.67}, "CrossCheck-explicit ↓": {"CrossCheck-explicit ↓": 53.85}, "RefCheck ↓": {"RefCheck ↓": 45.3}}}

@@ -1,0 +1,1 @@
+{"config": {"model_name": "Video-Llama (visual-only)", "model_link": "https://github.com/DAMO-NLP-SG/Video-LLaMA/tree/main"}, "results": {"SelfCheckGPT ↓": {"SelfCheckGPT ↓": 41.14}, "CrossCheck-explicit ↓": {"CrossCheck-explicit ↓": 52.02}, "RefCheck ↓": {"RefCheck ↓": 46.34}}}

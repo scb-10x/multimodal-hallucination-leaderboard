@@ -1,0 +1,10 @@
+Model Name (Audio description),Model Link,SelfCheckGPT ↓,CrossCheck-explicit ↓,RefCheck ↓
+LTU,https://github.com/YuanGongND/ltu/tree/main,21.95,37.44,32.57
+SALMONN,https://github.com/bytedance/SALMONN,34.99,42.21,32.99
+Qwen-audio,https://huggingface.co/Qwen/Qwen-Audio-Chat,36.57,43.66,34.31
+FAVOR (audio-only),https://github.com/BriansIDP/AudioVisualLLM,49.62,66.69,59.17
+Video-Llama (audio-only),https://github.com/DAMO-NLP-SG/Video-LLaMA/tree/main,56.42,68.05,57.25
+Gemini-v1.5-pro (audio-only),,25.82,34.66,33.62
+FAVOR (audio-visual),,33.25,35.2,34.62
+Video-Llama (audio-visual),,70.23,41.25,
+Gemini-v1.5-pro (audio-visual),,48.51,28.79,47.1

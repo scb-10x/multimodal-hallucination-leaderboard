@@ -1,0 +1,1 @@
+{"config": {"model_name": "Qwen-audio", "model_link": "https://huggingface.co/Qwen/Qwen-Audio-Chat"}, "results": {"SelfCheckGPT ↓": {"SelfCheckGPT ↓": 36.57}, "CrossCheck-explicit ↓": {"CrossCheck-explicit ↓": 43.66}, "RefCheck ↓": {"RefCheck ↓": 34.31}}}

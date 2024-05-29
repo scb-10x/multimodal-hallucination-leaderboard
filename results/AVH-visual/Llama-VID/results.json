@@ -1,0 +1,1 @@
+{"config": {"model_name": "Llama-VID", "model_link": "https://github.com/dvlab-research/LLaMA-VID"}, "results": {"SelfCheckGPT ↓": {"SelfCheckGPT ↓": 38.61}, "CrossCheck-explicit ↓": {"CrossCheck-explicit ↓": 39.14}, "RefCheck ↓": {"RefCheck ↓": 35.56}}}

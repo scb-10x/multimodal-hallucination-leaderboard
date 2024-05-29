@@ -1,0 +1,11 @@
+Model Name (Visual description),,SelfCheckGPT ↓,CrossCheck-explicit ↓,RefCheck ↓
+Llama-VID,https://github.com/dvlab-research/LLaMA-VID,38.61,39.14,35.56
+Valley,https://github.com/RupertLuo/Valley,52.43,55.98,51.78
+Chat-Univi,https://github.com/PKU-YuanGroup/Chat-UniVi,29.4,32.68,25.71
+Video-LLaVA,https://github.com/PKU-YuanGroup/Video-LLaVA,30.59,33.52,31.71
+FAVOR (visual-only),https://github.com/BriansIDP/AudioVisualLLM,60.67,53.85,45.3
+Video-Llama (visual-only),https://github.com/DAMO-NLP-SG/Video-LLaMA/tree/main,41.14,52.02,46.34
+Gemini-v1.5-pro (visual-only),,19.87,31.74,24.19
+FAVOR (audio-only & audio-visual),,56.42,49.6,51.42
+Video-Llama (audio-only & audio-visual),,47.73,49.13,50.41
+Gemini-v1.5-pro (audio-only & audio-visual),,12.77,23.27,19.34

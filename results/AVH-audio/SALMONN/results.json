@@ -1,0 +1,1 @@
+{"config": {"model_name": "SALMONN", "model_link": "https://github.com/bytedance/SALMONN"}, "results": {"SelfCheckGPT ↓": {"SelfCheckGPT ↓": 34.99}, "CrossCheck-explicit ↓": {"CrossCheck-explicit ↓": 42.21}, "RefCheck ↓": {"RefCheck ↓": 32.99}}}
