@@ -16,7 +16,7 @@
     - git remote add origin git@hf.co:spaces/????/leaderboard
     - git push origin main --force
 6. Verified if the it's all worked.
-
+7. Edit leaderboard/src/envs.py and another files to customized the leaderboard.
 
 #### Debug / Develop
 ```
