@@ -17,6 +17,8 @@
     - git push origin main --force
 6. Verified if the it's all worked.
 7. Edit leaderboard/src/envs.py and another files to customized the leaderboard.
+8. cd leaderboard && pip install -r requirements.txt
+9. python app.py # to start server
 
 #### Debug / Develop
 ```

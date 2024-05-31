@@ -7,12 +7,12 @@ from huggingface_hub import HfApi
 # ----------------------------------
 TOKEN = os.environ.get("TOKEN") # A read/write token for your org
 
-OWNER = "kunato-lab" # Change to your org - don't forget to create a results and request dataset, with the correct format!
+OWNER = "scb10x" # Change to your org - don't forget to create a results and request dataset, with the correct format!
 # ----------------------------------
 
 REPO_ID = f"{OWNER}/leaderboard"
-QUEUE_REPO = f"{OWNER}/requests"
-RESULTS_REPO = f"{OWNER}/results"
+QUEUE_REPO = f"{OWNER}/av_hallucination_requests"
+RESULTS_REPO = f"{OWNER}/av_hallucination_results"
 
 # If you setup a cache later, just change HF_HOME
 CACHE_PATH=os.getenv("HF_HOME", ".")
