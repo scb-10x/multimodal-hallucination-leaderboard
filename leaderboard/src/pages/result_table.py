@@ -4,7 +4,6 @@ from src.envs import EVAL_RESULTS_PATH
 from src.populate import get_leaderboard_df
 from src.display.utils import (
     AutoEvalColumn,
-    fields,
 )
 
 def update_table(
@@ -42,6 +41,7 @@ def filter_queries(query: str, filtered_df: pd.DataFrame) -> pd.DataFrame:
 def show_result_page(root_path: str, title: str, index: int):
     raw_data, original_df = get_leaderboard_df(EVAL_RESULTS_PATH + f'/{root_path}')
     leaderboard_df = original_df.copy()
+    number_of_field = list(leaderboard_df.keys())
     with gr.TabItem(title, elem_id="llm-benchmark-tab-table", id=index):
         with gr.Row():
             with gr.Column():
@@ -51,13 +51,18 @@ def show_result_page(root_path: str, title: str, index: int):
                         show_label=False,
                         elem_id="search-bar",
                     )
+
+        
         leaderboard_table = gr.components.Dataframe(
             value=leaderboard_df,
             headers=list(leaderboard_df.keys()),
             datatype=['markdown'],
             elem_id="leaderboard-table",
+            column_widths=(['20%'] if len(number_of_field) > 6 else [str((1.5 / (len(number_of_field))) * 100) + '%']) * len(number_of_field),
+            min_width=180,
             interactive=False,
             visible=True,
+            wrap=True
         )
         
 

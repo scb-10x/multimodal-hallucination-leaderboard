@@ -2,7 +2,6 @@ import glob
 import json
 import os
 from dataclasses import dataclass
-
 import dateutil
 
 from src.display.formatting import model_hyperlink
@@ -78,8 +77,11 @@ class EvalResult:
         }
 
         for key in self.results.keys():
-            data_dict[key] = self.results[key]
-
+            try:
+                data_dict[key] = float(self.results[key])
+            except ValueError:
+                data_dict[key] = self.results[key]
+        
         return data_dict
 
 

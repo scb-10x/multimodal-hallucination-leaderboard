@@ -1,6 +1,4 @@
 from dataclasses import dataclass, make_dataclass
-from enum import Enum
-
 import pandas as pd
 
 
@@ -41,29 +39,6 @@ class ModelDetails:
     name: str
     display_name: str = ""
     symbol: str = "" # emoji
-
-
-class ModelType(Enum):
-    PT = ModelDetails(name="pretrained", symbol="🟢")
-    FT = ModelDetails(name="fine-tuned", symbol="🔶")
-    IFT = ModelDetails(name="instruction-tuned", symbol="⭕")
-    RL = ModelDetails(name="RL-tuned", symbol="🟦")
-    Unknown = ModelDetails(name="", symbol="?")
-
-    def to_str(self, separator=" "):
-        return f"{self.value.symbol}{separator}{self.value.name}"
-
-    @staticmethod
-    def from_str(type):
-        if "fine-tuned" in type or "🔶" in type:
-            return ModelType.FT
-        if "pretrained" in type or "🟢" in type:
-            return ModelType.PT
-        if "RL-tuned" in type or "🟦" in type:
-            return ModelType.RL
-        if "instruction-tuned" in type or "⭕" in type:
-            return ModelType.IFT
-        return ModelType.Unknown
 
 
 # Column selection

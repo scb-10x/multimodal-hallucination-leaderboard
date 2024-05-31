@@ -7,7 +7,7 @@ NUM_FEWSHOT = 0 # Change with your few shot
 # ---------------------------------------------------
 
 # Your leaderboard name
-TITLE = """<h1 align="center" id="space-title">Demo leaderboard</h1>"""
+TITLE = """<h1 align="center" id="space-title">AV Hallucination Leaderboard</h1>"""
 
 # What does your leaderboard evaluate?
 INTRODUCTION_TEXT = """
@@ -53,13 +53,11 @@ If everything is done, check you can launch the EleutherAIHarness on your model 
 """
 
 CITATION_BUTTON_LABEL = "Copy the following snippet to cite these results"
-CITATION_BUTTON_TEXT = r"""
-@misc{sun2024crosscheckgpt,
+CITATION_BUTTON_TEXT = r"""@misc{sun2024crosscheckgpt,
       title={CrossCheckGPT: Universal Hallucination Ranking for Multimodal Foundation Models}, 
       author={Guangzhi Sun and Potsawee Manakul and Adian Liusie and Kunat Pipatanakul and Chao Zhang and Phil Woodland and Mark Gales},
       year={2024},
       eprint={2405.13684},
       archivePrefix={arXiv},
       primaryClass={cs.CL}
-}
-"""
+}"""

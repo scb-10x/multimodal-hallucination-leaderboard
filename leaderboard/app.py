@@ -1,17 +1,15 @@
 import subprocess
 import gradio as gr
-import pandas as pd
 from apscheduler.schedulers.background import BackgroundScheduler
 from huggingface_hub import snapshot_download
 
+from src.pages.about import show_about_page
 from src.pages.submit import show_submit_page
 from src.pages.result_table import show_result_page
 from src.about import (
     CITATION_BUTTON_LABEL,
     CITATION_BUTTON_TEXT,
-    EVALUATION_QUEUE_TEXT,
     INTRODUCTION_TEXT,
-    LLM_BENCHMARKS_TEXT,
     TITLE,
 )
 from src.display.css_html_js import custom_css
@@ -38,25 +36,24 @@ except Exception:
     restart_space()
 
 
-
-
 demo = gr.Blocks(css=custom_css)
 with demo:
     gr.HTML(TITLE)
     gr.Markdown(INTRODUCTION_TEXT, elem_classes="markdown-text")
 
     with gr.Tabs(elem_classes="tab-buttons") as tabs:
-        show_result_page(root_path='VH', title='Visual Hallucination Benchmark', index=0)
-        show_result_page(root_path='AVH-visual', title='AVHalluBench Visual', index=1)
-        show_result_page(root_path='AVH-audio', title='AVHalluBench Audio', index=2)
-        show_submit_page()        
+        show_result_page(root_path='VH', title='🎆 Visual Hallucination Benchmark', index=0)
+        show_result_page(root_path='AVH-visual', title='📺 AVHalluBench Visual', index=1)
+        show_result_page(root_path='AVH-audio', title='🔈 AVHalluBench Audio', index=2)
+        show_about_page(index=3)
+        show_submit_page(index=4)
 
     with gr.Row():
         with gr.Accordion("📙 Citation", open=False):
             citation_button = gr.Textbox(
                 value=CITATION_BUTTON_TEXT,
                 label=CITATION_BUTTON_LABEL,
-                lines=20,
+                lines=8,
                 elem_id="citation-button",
                 show_copy_button=True,
             )

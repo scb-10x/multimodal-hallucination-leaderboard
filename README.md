@@ -22,6 +22,7 @@
 ```
 cd leaderboard
 gradio app.py # to auto reload
+python app.py # to start app
 ```
 
 #### Basic result file for each model

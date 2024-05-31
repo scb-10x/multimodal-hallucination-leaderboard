@@ -10,7 +10,6 @@ from src.leaderboard.read_evals import get_raw_eval_results
 def get_leaderboard_df(results_path: str) -> pd.DataFrame:
     """Creates a dataframe from all the individual experiment results"""
     raw_data = get_raw_eval_results(results_path)
-    print('raw-data')
     all_data_json = [v.to_dict() for v in raw_data]
 
     df = pd.DataFrame.from_records(all_data_json)
@@ -39,7 +38,6 @@ def get_evaluation_queue_df(save_path: str, cols: list) -> list[pd.DataFrame]:
                 file_path = os.path.join(save_path, entry, sub_entry)
                 with open(file_path) as fp:
                     data = json.load(fp)
-
                 data[EvalQueueColumn.revision.name] = data.get("revision", "main")
                 all_evals.append(data)
 

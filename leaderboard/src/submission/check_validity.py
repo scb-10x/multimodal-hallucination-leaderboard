@@ -1,8 +1,6 @@
 import json
 import os
-import re
 from collections import defaultdict
-from datetime import datetime, timedelta, timezone
 
 import huggingface_hub
 from huggingface_hub import ModelCard
