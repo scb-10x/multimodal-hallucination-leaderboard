@@ -8,17 +8,24 @@
     - git commit -m "init commit"
     - git remote add origin git@hf.co:datasets/????/results
     - git push origin main --force
-4. create new "leaderboard" with spaces type repo on huggingface. With this config; Gradio; Blank; CPU basic - Free; Public.
-5. Setup git repo on "leaderboard";
+4. cd leaderboard && pip install -r requirements.txt
+5. Edit leaderboard/src/envs.py and another files to customized the leaderboard.
+6. Add TOKEN HF env to .env
+7. python app.py # to start server
+
+
+#### Deploy leaderboard online
+
+1. create new "leaderboard" with spaces type repo on huggingface. With this config; Gradio; Blank; CPU basic - Free; Public.
+2. Setup git repo on "leaderboard";
     - git init
     - git add .
     - git commit -m "init commit"
     - git remote add origin git@hf.co:spaces/????/leaderboard
     - git push origin main --force
-6. Verified if the it's all worked.
-7. Edit leaderboard/src/envs.py and another files to customized the leaderboard.
-8. cd leaderboard && pip install -r requirements.txt
-9. python app.py # to start server
+3. Verified if the it's all worked.
+
+
 
 #### Debug / Develop
 ```
