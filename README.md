@@ -1,42 +1,21 @@
-#### Setup
+---
+title: Leaderboard
+emoji: 🥇
+colorFrom: green
+colorTo: indigo
+sdk: gradio
+sdk_version: 4.4.0
+app_file: app.py
+pinned: true
+license: apache-2.0
+---
 
-1. Setup ssh-key in huggingface website
-2. create new "results" and "requests" with dataset type repo on huggingface. (if name different, need to change on leaderboard envs.py) - make it public
-3. Setup git repo on "results";
-    - git init
-    - git add .
-    - git commit -m "init commit"
-    - git remote add origin git@hf.co:datasets/????/results
-    - git push origin main --force
-4. cd leaderboard && pip install -r requirements.txt
-5. Edit leaderboard/src/envs.py and another files to customized the leaderboard.
-6. Add TOKEN HF env to .env
-7. python app.py # to start server
+# Start the configuration
 
+Most of the variables to change for a default leaderboard are in `src/env.py` (replace the path for your leaderboard) and `src/about.py` (for tasks).
 
-#### Deploy leaderboard online
-
-1. create new "leaderboard" with spaces type repo on huggingface. With this config; Gradio; Blank; CPU basic - Free; Public.
-2. Setup git repo on "leaderboard";
-    - git init
-    - git add .
-    - git commit -m "init commit"
-    - git remote add origin git@hf.co:spaces/????/leaderboard
-    - git push origin main --force
-3. Verified if the it's all worked.
-
-
-
-#### Debug / Develop
-```
-cd leaderboard
-gradio app.py # to auto reload
-python app.py # to start app
-```
-
-#### Basic result file for each model
-
-```
+Results files should have the following format and be stored as json files:
+```json
 {
     "config": {
         "model_dtype": "torch.float16", # or torch.bfloat16 or 8bit or 4bit
@@ -53,3 +32,14 @@ python app.py # to start app
     }
 }
 ```
+
+Request files are created automatically by this tool.
+
+If you encounter problem on the space, don't hesitate to restart it to remove the create eval-queue, eval-queue-bk, eval-results and eval-results-bk created folder.
+
+# Code logic for more complex edits
+
+You'll find 
+- the main table' columns names and properties in `src/display/utils.py`
+- the logic to read all results and request files, then convert them in dataframe lines, in `src/leaderboard/read_evals.py`, and `src/populate.py`
+- teh logic to allow or filter submissions in `src/submission/submit.py` and `src/submission/check_validity.py`
