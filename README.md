@@ -1,5 +1,5 @@
 ---
-title: Leaderboard
+title: Multimodal Hallucination Leaderboard
 emoji: 🥇
 colorFrom: green
 colorTo: indigo

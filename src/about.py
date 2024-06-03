@@ -6,7 +6,7 @@ from enum import Enum
 NUM_FEWSHOT = 0 # Change with your few shot
 # ---------------------------------------------------
 
-TITLE = """<h1 align="center" id="space-title">AV Hallucination Leaderboard</h1>"""
+TITLE = """<h1 align="center" id="space-title">Multimodal Hallucination Leaderboard</h1>"""
 
 INTRODUCTION_TEXT = """
 """

@@ -42,9 +42,9 @@ with demo:
     gr.Markdown(INTRODUCTION_TEXT, elem_classes="markdown-text")
 
     with gr.Tabs(elem_classes="tab-buttons") as tabs:
-        show_result_page(root_path='VH', title='🎆 Visual Hallucination Benchmark', index=0)
-        show_result_page(root_path='AVH-visual', title='📺 AVHalluBench Visual', index=1)
-        show_result_page(root_path='AVH-audio', title='🔈 AVHalluBench Audio', index=2)
+        show_result_page(root_path='VH', title='🎆 Image-to-Text Hallucination', index=0)
+        show_result_page(root_path='AVH-visual', title='📺 AVHalluBench (Visual)', index=1)
+        show_result_page(root_path='AVH-audio', title='🔈 AVHalluBench (Audio)', index=2)
         show_about_page(index=3)
         show_submit_page(index=4)
 
