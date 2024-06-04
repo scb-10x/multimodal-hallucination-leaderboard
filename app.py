@@ -42,7 +42,7 @@ with demo:
     gr.Markdown(INTRODUCTION_TEXT, elem_classes="markdown-text")
 
     with gr.Tabs(elem_classes="tab-buttons") as tabs:
-        show_result_page(root_path='VH', title='🏞️ MHaluBench', index=0)
+        show_result_page(root_path='VH', title='🏞️ POPE/MHaluBench', index=0)
         show_result_page(root_path='AVH-visual', title='📺 AVHalluBench (Visual)', index=1)
         show_result_page(root_path='AVH-audio', title='🔈 AVHalluBench (Audio)', index=2)
         show_about_page(index=3)
