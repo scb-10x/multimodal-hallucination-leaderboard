@@ -6,9 +6,17 @@ from enum import Enum
 NUM_FEWSHOT = 0 # Change with your few shot
 # ---------------------------------------------------
 
-TITLE = """<h1 align="center" id="space-title">AV Hallucination Leaderboard</h1>"""
+TITLE = """<h1 align="center" id="space-title">🎭 Multimodal Hallucination Leaderboard</h1>"""
+
+
+# <a href="url"></a>
 
 INTRODUCTION_TEXT = """
+<p>The Multimodal Hallucination Leaderboard ranks multimodal large language models based on hallucination levels in various tasks. System rankings for three different input modalities are displayed, covering the audio, image, and video domains. For each task, hallucination levels are measured using various existing hallucination ranking metrics. The leaderboard currently consists of two main datasets (and three tasks):</p>
+<ul>
+      <li><b><a href="https://huggingface.co/datasets/openkg/MHaluBench">MHaluBench</a></b>: An image captioning dataset where the task is to generate text given an input image. System Hallucination scores are measured using existing visual hallucination metrics, including <a href="https://arxiv.org/abs/1809.02156">CHAIR</a>, <a href="https://arxiv.org/abs/2305.10355">POPE</a>, <a href="https://arxiv.org/abs/2402.03190">UniHD</a>, <a href="https://arxiv.org/abs/2303.08896">SelfCheckGPT</a> and <a href="https://arxiv.org/abs/2405.13684">CrossCheckGPT</a>.</li>
+      <li><b><a href="https://huggingface.co/datasets/potsawee/avhallubench">AVHalluBench</a></b> (Visual and Audio): A video-captioning dataset where the task is to generate text descriptions given an input video. This dataset can be used for two different tasks; either generating <b>visual descriptions</b> or <b>audio descriptions</b>. Existing audio-visual hallucination metrics include <a href="https://arxiv.org/abs/2303.08896">SelfCheckGPT</a>, <a href="https://arxiv.org/abs/2405.13684">CrossCheckGPT</a>, and <a href="https://arxiv.org/abs/2405.13684">RefCheck</a>.</li>
+</ul>
 """
 
 LLM_BENCHMARKS_TEXT = f"""

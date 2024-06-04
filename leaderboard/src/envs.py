@@ -10,7 +10,7 @@ TOKEN = os.environ.get("TOKEN") # A read/write token for your org
 OWNER = "scb10x" # Change to your org - don't forget to create a results and request dataset, with the correct format!
 # ----------------------------------
 
-REPO_ID = f"{OWNER}/mllm-hallucinations-leaderboard"
+REPO_ID = f"{OWNER}/multimodal-hallucination-leaderboard"
 QUEUE_REPO = f"{OWNER}/av_hallucination_requests"
 RESULTS_REPO = f"{OWNER}/av_hallucination_results"
 
