@@ -1,6 +1,6 @@
 ---
 title: Multimodal Hallucination Leaderboard
-emoji: 🥇
+emoji: 🎭
 colorFrom: green
 colorTo: indigo
 sdk: gradio

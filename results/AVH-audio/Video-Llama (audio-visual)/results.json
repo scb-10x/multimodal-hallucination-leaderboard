@@ -1,1 +1,1 @@
-{"config": {"model_name": "Video-Llama (audio-visual)", "model_link": NaN}, "results": {"SelfCheckGPT ↓": {"SelfCheckGPT ↓": 70.23}, "CrossCheck-explicit ↓": {"CrossCheck-explicit ↓": 41.25}, "RefCheck ↓": {"RefCheck ↓": NaN}}}
+{"config": {"model_name": "Video-Llama (audio-visual)", "model_link": NaN}, "results": {"SelfCheckGPT ↓": {"SelfCheckGPT ↓": 70.23}, "CrossCheck-explicit ↓": {"CrossCheck-explicit ↓": 41.25}, "RefCheck ↓": {"RefCheck ↓": 41.96}}}
