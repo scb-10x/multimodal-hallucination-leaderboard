@@ -14,6 +14,7 @@ USERS_TO_SUBMISSION_DATES = None
 
 def add_new_eval(
     model: str,
+    code_repo: str
 ):
     global REQUESTED_MODELS
     global USERS_TO_SUBMISSION_DATES
@@ -47,6 +48,7 @@ def add_new_eval(
 
     eval_entry = {
         "model": model,
+        "code_repo": code_repo,
         "revision": revision,
         "status": "PENDING",
         "submitted_time": current_time,
