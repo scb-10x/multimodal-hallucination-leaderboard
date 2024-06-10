@@ -46,8 +46,7 @@ def show_submit_page(index: int):
         with gr.Row():
             with gr.Column():
                 model_name_textbox = gr.Textbox(label="Model name")
-                # TODO
-                # add more field here
+                code_repo_textbox = gr.Textbox(label="Code repo")
 
         submit_button = gr.Button("Submit Eval")
         submission_result = gr.Markdown()
@@ -55,6 +54,7 @@ def show_submit_page(index: int):
             add_new_eval,
             [
                 model_name_textbox,
+                code_repo_textbox
             ],
             submission_result,
         )
