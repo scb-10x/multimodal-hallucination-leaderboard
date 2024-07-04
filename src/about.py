@@ -20,11 +20,17 @@ INTRODUCTION_TEXT = """
 """
 
 LLM_BENCHMARKS_TEXT = f"""
-TODO write about page here
+This leaderboard presents hallucination benchmarks for multimodal LLMs on tasks of different input modalities, including image-captioning and video-captioning. For each task, we measure hallucination levels of the text output of various multimodal LLMs using existing hallucination metrics.
+
+Some metrics such as POPE*, CHAIR, UniHD are designed specifically for image-to-text tasks, and thus are not directly applicable to video-to-text tasks. For the image-to-text benchmark, we also provide the ranking based human rating where annotators were asked to rate the outputs of the multimodal LLMs on MHaluBench. *Note that the POPE paper proposed both a dataset and a method. 
+
+More information about each existing metric can be found in their relevant paper, and CrossCheckGPT is proposed in https://arxiv.org/pdf/2405.13684.
+
+Currently, the leaderboard hasn't yet supported automatic evaluation of new models, but you are welcome to request an evaluation of a new model by creating a new discussion, or emailing us at potsawee@scb10x.com.
 """
 
 EVALUATION_QUEUE_TEXT = """
-TODO write this
+Currently, the leaderboard hasn't yet supported automatic evaluation of new models, but you are welcome to request an evaluation of a new model by creating a new discussion, or emailing us at potsawee@scb10x.com.
 """
 
 CITATION_BUTTON_LABEL = "Copy the following snippet to cite these results"
