@@ -10,6 +10,12 @@ pinned: true
 license: apache-2.0
 ---
 
+# Multimodal Hallucination Leaderboard
+
+**This repository is archived and released as-is. If you’re interested in this work, please contact us.**
+
+---
+
 # Start the configuration
 
 Most of the variables to change for a default leaderboard are in `src/env.py` (replace the path for your leaderboard) and `src/about.py` (for tasks).
